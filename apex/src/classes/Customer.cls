@@ -7,8 +7,8 @@
 */
 public virtual class Customer {
 
-  Decimal amount;
-  Double descount;
+  public Decimal amount;
+  protected Double descount;
   String name;
   String status;
   CustomerType type;
