@@ -14,7 +14,7 @@ public virtual class Customer {
   CustomerType type;
 
   String[] emails;
-  List<Contact> contacts;
+  List<Contact> contacts = new List<Contact>();
   Set<Contact> createdContacts;
 
   //intenções em Map: indexando ou agrupando
