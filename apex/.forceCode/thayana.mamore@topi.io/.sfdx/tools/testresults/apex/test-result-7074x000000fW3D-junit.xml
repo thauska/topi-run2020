@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2020-11-27T18:44:04-03:00" hostname="https://topi9-dev-ed.my.salesforce.com" tests="1" failures="0"  errors="0"  time="0.47">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="1"/>
+            <property name="passing" value="1"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Nov 27, 2020 6:44 PM"/>
+            <property name="testExecutionTime" value="0.47 s"/>
+            <property name="testTotalTime" value="0.47 s"/>
+            <property name="commandTime" value="5.88 s"/>
+            <property name="hostname" value="https://topi9-dev-ed.my.salesforce.com"/>
+            <property name="orgId" value="00D4x0000018LdMEAU"/>
+            <property name="username" value="thayana.mamore@topi.io"/>
+            <property name="testRunId" value="7074x000000fW3D"/>
+            <property name="userId" value="0054x000000OEvxAAG"/>
+            <property name="testRunCoverage" value="58%"/>
+            <property name="orgWideCoverage" value="9%"/>
+        </properties>
+        <testcase name="filterAccountsByDocumentNumberTest" classname="AccountFilterTest" time="0.47">
+        </testcase>
+    </testsuite>
+</testsuites>

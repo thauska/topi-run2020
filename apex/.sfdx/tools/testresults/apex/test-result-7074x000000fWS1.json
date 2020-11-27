@@ -1,0 +1,662 @@
+{
+    "summary": {
+        "outcome": "Passed",
+        "testsRan": 1,
+        "passing": 1,
+        "failing": 0,
+        "skipped": 0,
+        "passRate": "100%",
+        "failRate": "0%",
+        "testStartTime": "Nov 27, 2020 7:28 PM",
+        "testExecutionTime": "316 ms",
+        "testTotalTime": "316 ms",
+        "commandTime": "6141 ms",
+        "hostname": "https://topi9-dev-ed.my.salesforce.com",
+        "orgId": "00D4x0000018LdMEAU",
+        "username": "thayana.mamore@topi.io",
+        "testRunId": "7074x000000fWS1",
+        "userId": "0054x000000OEvxAAG",
+        "testRunCoverage": "60%",
+        "orgWideCoverage": "10%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v50.0/tooling/sobjects/ApexTestResult/07M4x000000Cf7gEAC"
+            },
+            "Id": "07M4x000000Cf7gEAC",
+            "QueueItemId": "7094x000000x6DOAAY",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7074x000000fWS1AAM",
+            "MethodName": "filterAccountsByDocumentNumberTest",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RZNPAA4"
+                },
+                "Id": "01p4x000003RZNPAA4",
+                "Name": "AccountFilterTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 316,
+            "FullName": "AccountFilterTest.filterAccountsByDocumentNumberTest"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p4x000003RXkUAAW",
+                "name": "BrazilianDocumentValidator",
+                "totalLines": 46,
+                "lines": {
+                    "10": 1,
+                    "12": 1,
+                    "13": 1,
+                    "16": 1,
+                    "18": 1,
+                    "19": 1,
+                    "21": 1,
+                    "23": 1,
+                    "27": 1,
+                    "29": 1,
+                    "30": 1,
+                    "31": 0,
+                    "35": 1,
+                    "44": 1,
+                    "46": 1,
+                    "47": 1,
+                    "48": 1,
+                    "50": 1,
+                    "52": 1,
+                    "53": 1,
+                    "54": 1,
+                    "56": 1,
+                    "60": 1,
+                    "62": 1,
+                    "64": 1,
+                    "68": 1,
+                    "70": 1,
+                    "71": 0,
+                    "74": 1,
+                    "76": 1,
+                    "77": 1,
+                    "79": 1,
+                    "82": 1,
+                    "84": 1,
+                    "85": 1,
+                    "86": 1,
+                    "87": 1,
+                    "89": 1,
+                    "91": 1,
+                    "92": 1,
+                    "93": 1,
+                    "97": 1,
+                    "99": 1,
+                    "100": 1,
+                    "103": 1,
+                    "106": 1
+                },
+                "totalCovered": 44,
+                "coveredPercent": 95.65217391304348
+            },
+            {
+                "id": "01p4x000003RKohAAG",
+                "name": "AccountTH",
+                "totalLines": 14,
+                "lines": {
+                    "20": 1,
+                    "21": 1,
+                    "24": 1,
+                    "25": 1,
+                    "26": 1,
+                    "28": 1,
+                    "29": 1,
+                    "33": 1,
+                    "35": 1,
+                    "40": 0,
+                    "42": 0,
+                    "47": 1,
+                    "49": 1,
+                    "51": 1
+                },
+                "totalCovered": 12,
+                "coveredPercent": 85.71428571428571
+            },
+            {
+                "id": "01p4x000003RYpjAAG",
+                "name": "AccountFilter",
+                "totalLines": 12,
+                "lines": {
+                    "3": 1,
+                    "5": 1,
+                    "7": 1,
+                    "9": 1,
+                    "10": 1,
+                    "13": 1,
+                    "14": 1,
+                    "15": 1,
+                    "18": 1,
+                    "19": 1,
+                    "22": 1,
+                    "26": 1
+                },
+                "totalCovered": 12,
+                "coveredPercent": 100
+            },
+            {
+                "id": "01p4x000003RYLoAAO",
+                "name": "AccountValidator",
+                "totalLines": 6,
+                "lines": {
+                    "3": 1,
+                    "5": 1,
+                    "7": 1,
+                    "9": 1,
+                    "10": 0,
+                    "15": 1
+                },
+                "totalCovered": 5,
+                "coveredPercent": 83.33333333333334
+            },
+            {
+                "id": "01q4x0000000SfJAAU",
+                "name": "Account",
+                "totalLines": 1,
+                "lines": {
+                    "3": 1
+                },
+                "totalCovered": 1,
+                "coveredPercent": 100
+            },
+            {
+                "id": "01p4x000003RFDzAAO",
+                "name": "TriggerHandler",
+                "totalLines": 103,
+                "lines": {
+                    "21": 1,
+                    "22": 1,
+                    "26": 1,
+                    "27": 1,
+                    "35": 1,
+                    "37": 1,
+                    "38": 0,
+                    "41": 1,
+                    "44": 1,
+                    "45": 1,
+                    "46": 1,
+                    "48": 1,
+                    "49": 0,
+                    "51": 1,
+                    "52": 0,
+                    "54": 1,
+                    "55": 1,
+                    "57": 0,
+                    "58": 0,
+                    "60": 0,
+                    "61": 0,
+                    "63": 0,
+                    "64": 0,
+                    "69": 0,
+                    "70": 0,
+                    "71": 0,
+                    "72": 0,
+                    "74": 0,
+                    "78": 0,
+                    "79": 0,
+                    "86": 0,
+                    "87": 0,
+                    "90": 0,
+                    "91": 0,
+                    "94": 0,
+                    "95": 0,
+                    "98": 0,
+                    "99": 0,
+                    "107": 1,
+                    "108": 1,
+                    "112": 1,
+                    "113": 1,
+                    "114": 0,
+                    "115": 0,
+                    "117": 1,
+                    "120": 1,
+                    "121": 1,
+                    "122": 1,
+                    "123": 1,
+                    "124": 1,
+                    "125": 0,
+                    "126": 1,
+                    "127": 1,
+                    "128": 0,
+                    "129": 1,
+                    "130": 0,
+                    "131": 1,
+                    "132": 0,
+                    "133": 0,
+                    "134": 0,
+                    "135": 0,
+                    "136": 0,
+                    "137": 0,
+                    "138": 0,
+                    "139": 0,
+                    "140": 0,
+                    "146": 1,
+                    "147": 1,
+                    "148": 1,
+                    "149": 0,
+                    "150": 0,
+                    "151": 0,
+                    "152": 0,
+                    "159": 1,
+                    "160": 1,
+                    "161": 0,
+                    "163": 1,
+                    "167": 1,
+                    "168": 1,
+                    "177": 0,
+                    "179": 0,
+                    "181": 0,
+                    "183": 1,
+                    "185": 0,
+                    "187": 0,
+                    "189": 0,
+                    "201": 0,
+                    "202": 0,
+                    "203": 0,
+                    "206": 0,
+                    "207": 0,
+                    "208": 0,
+                    "211": 0,
+                    "212": 0,
+                    "213": 0,
+                    "216": 0,
+                    "217": 0,
+                    "220": 0,
+                    "221": 0,
+                    "224": 0,
+                    "225": 0,
+                    "228": 0,
+                    "229": 0
+                },
+                "totalCovered": 37,
+                "coveredPercent": 35.92233009708738
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v50.0/tooling/sobjects/ApexCodeCoverage/7144x000000cAprAAE"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RZNPAA4"
+                    },
+                    "Id": "01p4x000003RZNPAA4",
+                    "Name": "AccountFilterTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        10,
+                        12,
+                        13,
+                        16,
+                        18,
+                        19,
+                        21,
+                        23,
+                        27,
+                        29,
+                        30,
+                        35,
+                        44,
+                        46,
+                        47,
+                        48,
+                        50,
+                        52,
+                        53,
+                        54,
+                        56,
+                        60,
+                        62,
+                        64,
+                        68,
+                        70,
+                        74,
+                        76,
+                        77,
+                        79,
+                        82,
+                        84,
+                        85,
+                        86,
+                        87,
+                        89,
+                        91,
+                        92,
+                        93,
+                        97,
+                        99,
+                        100,
+                        103,
+                        106
+                    ],
+                    "uncoveredLines": [
+                        31,
+                        71
+                    ]
+                },
+                "TestMethodName": "filterAccountsByDocumentNumberTest",
+                "NumLinesCovered": 44,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RXkUAAW"
+                    },
+                    "Id": "01p4x000003RXkUAAW",
+                    "Name": "BrazilianDocumentValidator"
+                },
+                "NumLinesUncovered": 2
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v50.0/tooling/sobjects/ApexCodeCoverage/7144x000000cApsAAE"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RZNPAA4"
+                    },
+                    "Id": "01p4x000003RZNPAA4",
+                    "Name": "AccountFilterTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        20,
+                        21,
+                        24,
+                        25,
+                        26,
+                        28,
+                        29,
+                        33,
+                        35,
+                        47,
+                        49,
+                        51
+                    ],
+                    "uncoveredLines": [
+                        40,
+                        42
+                    ]
+                },
+                "TestMethodName": "filterAccountsByDocumentNumberTest",
+                "NumLinesCovered": 12,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RKohAAG"
+                    },
+                    "Id": "01p4x000003RKohAAG",
+                    "Name": "AccountTH"
+                },
+                "NumLinesUncovered": 2
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v50.0/tooling/sobjects/ApexCodeCoverage/7144x000000cAptAAE"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RZNPAA4"
+                    },
+                    "Id": "01p4x000003RZNPAA4",
+                    "Name": "AccountFilterTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        10,
+                        13,
+                        14,
+                        15,
+                        18,
+                        19,
+                        22,
+                        26
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "filterAccountsByDocumentNumberTest",
+                "NumLinesCovered": 12,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RYpjAAG"
+                    },
+                    "Id": "01p4x000003RYpjAAG",
+                    "Name": "AccountFilter"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v50.0/tooling/sobjects/ApexCodeCoverage/7144x000000cApoAAE"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RZNPAA4"
+                    },
+                    "Id": "01p4x000003RZNPAA4",
+                    "Name": "AccountFilterTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        15
+                    ],
+                    "uncoveredLines": [
+                        10
+                    ]
+                },
+                "TestMethodName": "filterAccountsByDocumentNumberTest",
+                "NumLinesCovered": 5,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RYLoAAO"
+                    },
+                    "Id": "01p4x000003RYLoAAO",
+                    "Name": "AccountValidator"
+                },
+                "NumLinesUncovered": 1
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v50.0/tooling/sobjects/ApexCodeCoverage/7144x000000cAppAAE"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RZNPAA4"
+                    },
+                    "Id": "01p4x000003RZNPAA4",
+                    "Name": "AccountFilterTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        3
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "filterAccountsByDocumentNumberTest",
+                "NumLinesCovered": 1,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexTrigger/01q4x0000000SfJAAU"
+                    },
+                    "Id": "01q4x0000000SfJAAU",
+                    "Name": "Account"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v50.0/tooling/sobjects/ApexCodeCoverage/7144x000000cApqAAE"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RZNPAA4"
+                    },
+                    "Id": "01p4x000003RZNPAA4",
+                    "Name": "AccountFilterTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        21,
+                        22,
+                        26,
+                        27,
+                        35,
+                        37,
+                        41,
+                        44,
+                        45,
+                        46,
+                        48,
+                        51,
+                        54,
+                        55,
+                        107,
+                        108,
+                        112,
+                        113,
+                        117,
+                        120,
+                        121,
+                        122,
+                        123,
+                        124,
+                        126,
+                        127,
+                        129,
+                        131,
+                        146,
+                        147,
+                        148,
+                        159,
+                        160,
+                        163,
+                        167,
+                        168,
+                        183
+                    ],
+                    "uncoveredLines": [
+                        38,
+                        49,
+                        52,
+                        57,
+                        58,
+                        60,
+                        61,
+                        63,
+                        64,
+                        69,
+                        70,
+                        71,
+                        72,
+                        74,
+                        78,
+                        79,
+                        86,
+                        87,
+                        90,
+                        91,
+                        94,
+                        95,
+                        98,
+                        99,
+                        114,
+                        115,
+                        125,
+                        128,
+                        130,
+                        132,
+                        133,
+                        134,
+                        135,
+                        136,
+                        137,
+                        138,
+                        139,
+                        140,
+                        149,
+                        150,
+                        151,
+                        152,
+                        161,
+                        177,
+                        179,
+                        181,
+                        185,
+                        187,
+                        189,
+                        201,
+                        202,
+                        203,
+                        206,
+                        207,
+                        208,
+                        211,
+                        212,
+                        213,
+                        216,
+                        217,
+                        220,
+                        221,
+                        224,
+                        225,
+                        228,
+                        229
+                    ]
+                },
+                "TestMethodName": "filterAccountsByDocumentNumberTest",
+                "NumLinesCovered": 37,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v50.0/tooling/sobjects/ApexClass/01p4x000003RFDzAAO"
+                    },
+                    "Id": "01p4x000003RFDzAAO",
+                    "Name": "TriggerHandler"
+                },
+                "NumLinesUncovered": 66
+            }
+        ],
+        "summary": {
+            "totalLines": 182,
+            "coveredLines": 111,
+            "testRunCoverage": "60%",
+            "orgWideCoverage": "10%"
+        }
+    }
+}
