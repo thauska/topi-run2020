@@ -36,8 +36,38 @@ public class AccountFilterTest {
     accounts = new List<Account>();
     accounts.add (new Account (Name = 'Teste 01'));
     accounts.add (new Account (Name = 'Teste 02'));
+
     filteredAccounts = filter.filterByChangedDocumentNumber(accounts, null);
+    
     System.assert(filteredAccounts.isEmpty());
+
+  }
+
+  @isTest
+  static void filterAccountsByCategoryAndAnnualRevenue () {
+
+    List<Account> accounts = new List<Account>();
+
+    accounts.add (new Account(Name = 'teste', Category__c = 'Premium', AnnualRevenue = 1000100 ));
+    accounts.add (new Account(Name = 'teste', Category__c = 'Premium', AnnualRevenue = 600000 ));
+    
+    AccountFilter filter = new AccountFilter();
+
+    List<Account> filteredAccounts =  filter.filterByCategoryAndAnnualRevenue(accounts, null, null);
+    
+    System.assertNotEquals(accounts.size(), filteredAccounts.size());
+    System.assert(filteredAccounts.size() == 0);
+    
+    filteredAccounts =  filter.filterByCategoryAndAnnualRevenue(accounts, 'Standard', null);
+    System.assertNotEquals(accounts.size(), filteredAccounts.size() );
+    System.assert(filteredAccounts.size() == 0);
+    
+    filteredAccounts =  filter.filterByCategoryAndAnnualRevenue(accounts, 'Premium', 150000);
+    System.assertNotEquals(accounts.size(), filteredAccounts.size() );
+    System.assert(filteredAccounts.size() == 0);
+    
+    filteredAccounts =  filter.filterByCategoryAndAnnualRevenue(accounts, 'Premium', 1500000);
+    System.assertEquals(accounts.size(), filteredAccounts.size() );
 
   }
 

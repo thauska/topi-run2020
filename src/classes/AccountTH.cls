@@ -1,10 +1,5 @@
 /**
- * Não pode ser grande! Princípio da responsabilidade única
- * Ela delega
- *  - Filtra (Filter)
- *  - Valida (Validator)
- *  - Enriquece (Enricher)
- *  - Publica (Publisher)
+ * @author thauska
  */
 
 public virtual with sharing class AccountTH extends TriggerHandler {
@@ -17,6 +12,8 @@ public virtual with sharing class AccountTH extends TriggerHandler {
 
   AccountValidator validator;
 
+  AccountEventEnricher accountEventEnricher;
+
   public AccountTH () {
     this ( (List<Account> ) Trigger.new, (Map<Id,Account>) Trigger.oldMap );
   }
@@ -27,20 +24,22 @@ public virtual with sharing class AccountTH extends TriggerHandler {
 
     this.filter = new AccountFilter();
     this.validator = new AccountValidator();
+    this.accountEventEnricher = new AccountEventEnricher();
   }
 
   override
   public void beforeInsert() {
-
     validateDocumentNumber();
-
   }
 
   override
   public void beforeUpdate() {
-
     validateDocumentNumber();
+  }
 
+  override
+  public void afterInsert() {
+    createNewAccountPremiumScheduleEvent();
   }
 
   virtual
@@ -50,6 +49,13 @@ public virtual with sharing class AccountTH extends TriggerHandler {
 
     this.validator.validateDocumentNumber(filteredAccount);
 
+  }
+
+  virtual
+  public void createNewAccountPremiumScheduleEvent () {
+    List<Account> premiumAccounts = this.filter.filterByCategoryAndAnnualRevenue(newAccounts, 'Premium', 1000000);
+
+    this.accountEventEnricher.createNewEventForPremiumAccount(premiumAccounts);
   }
 
 }

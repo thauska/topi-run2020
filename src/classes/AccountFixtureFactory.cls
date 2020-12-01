@@ -17,6 +17,13 @@ public class AccountFixtureFactory {
 
   }
 
+  
+  public static Account createAccountByCategoryAndAnnualRevenue(String name, String category, Decimal annualRevenue) {
+
+    return new Account ( Name = name, Category__c = category, AnnualRevenue = annualRevenue );
+    
+  }
+
   public static Account createAccount ( Account account ) {
 
     insert account;
