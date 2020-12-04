@@ -11,5 +11,48 @@ global with sharing class ProjectController {
     return repository.create(transformer.toProject(project));
   }
 
+  @HttpGet
+  global static void getProjects () {
+
+    RestRequest request = RestContext.request;
+
+    RestResponse response = RestContext.response;
+
+    Map<String,String> parameters = request.params;
+
+    String projectId = parameters.get('id');
+
+    if ( String.isEmpty(projectId) ) {
+
+      response.statusCode = 400;
+      response.responseBody = Blob.valueOf( new ProjectBussinessError('400', 'Invalid Project Id').toString() );
+      return;
+
+    }
+
+    ProjectRepository repository = new ProjectRepository();
+
+    response.statusCode = 200;
+    response.responseBody = Blob.valueOf( JSON.serialize(repository.findById(projectId)) );
+
+  }
+
+  public class ProjectException extends Exception {}
+
+  public class ProjectBussinessError {
+    String code;
+    String message;
+
+    public ProjectBussinessError (String code, String message) {
+      this.code = code;
+      this.message = message;
+    }
+
+    override
+    public String toString () {
+      return JSON.serialize(this);
+    }
+
+  }
 
 }
