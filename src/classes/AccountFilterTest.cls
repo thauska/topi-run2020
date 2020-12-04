@@ -5,12 +5,10 @@ public class AccountFilterTest {
   @isTest
   static void filterAccountsByDocumentNumberTest () {
 
-    List<Account> accounts = new List<Account>();
+    List<Account> accounts = new List<Account> {
+      AccountFixtureFactory.newAccount('Teste 03', '86473518002')
+    };
 
-    accounts.add (AccountFixtureFactory.newAccount('Teste 03', '86473518002') );
-    accounts.add (AccountFixtureFactory.newAccount('Teste 04', '86473518002') );
-    insert accounts;
-    
     AccountFilter filter = new AccountFilter();
 
     //validação
@@ -39,7 +37,7 @@ public class AccountFilterTest {
 
     filteredAccounts = filter.filterByChangedDocumentNumber(accounts, null);
     
-    System.assert(filteredAccounts.isEmpty());
+    System.assert(filteredAccounts.isEmpty(), 'field is empty');
 
   }
 
@@ -48,8 +46,8 @@ public class AccountFilterTest {
 
     List<Account> accounts = new List<Account>();
 
-    accounts.add (new Account(Name = 'teste', Category__c = 'Premium', AnnualRevenue = 1000100 ));
-    accounts.add (new Account(Name = 'teste', Category__c = 'Premium', AnnualRevenue = 600000 ));
+    accounts.add ( AccountFixtureFactory.createAccountByCategoryAndAnnualRevenue('teste', 'Premium', 1001000));
+    accounts.add (AccountFixtureFactory.createAccountByCategoryAndAnnualRevenue('teste', 'Premium', 600000 ));
     
     AccountFilter filter = new AccountFilter();
 

@@ -26,4 +26,4 @@ repository.create (accounts);
 System.debug ( JSON.serialize ( accounts ));
 
 GetAddressOutboundService service = new GetAddressOutboundService ();
-ViaCepAddressResponse response = service.findAddress ('66123440');
+ZipCodeAddress response = service.findAddress ('66123440');
