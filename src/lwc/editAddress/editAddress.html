@@ -1,0 +1,41 @@
+<template>
+  <div class="slds-grid slds-wrap slds-p-around_small">
+    <div class="slds-col slds-size_2-of-3">
+      <c-search-zip-code></c-search-zip-code>
+    </div>
+    <div class="slds-grid slds-size_3-of-3">
+      <lightning-input name="address" label="Endereço"
+            type="text"
+            max-length="255"
+            required
+      ></lightning-input>
+    </div>
+    <div class="slds-grid slds-size_1-of-3 slds-p-right_xx-small">
+      <lightning-input name="streetNumber" label="Número"
+            type="text"
+            max-length="20"
+            required
+      ></lightning-input>
+    </div>
+    <div class="slds-grid slds-size_2-of-3">
+      <lightning-input name="addressAdditionalInfo" label="Informação Adicional"
+            type="text"
+            max-length="255"
+      ></lightning-input>
+    </div>
+    <div class="slds-grid slds-size_2-of-3 slds-p-right_xx-small">
+      <lightning-input name="city" label="Cidade"
+            type="text"
+            max-length="255"
+            required
+      ></lightning-input>
+    </div>
+    <div class="slds-grid slds-size_1-of-3">
+      <lightning-input name="state" label="Estado"
+            type="text"
+            max-length="255"
+            required
+      ></lightning-input>
+    </div>
+  </div>
+</template>
