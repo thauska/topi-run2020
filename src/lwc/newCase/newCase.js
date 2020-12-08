@@ -19,4 +19,17 @@ export default class NewCase extends LightningElement {
 
     }
 
+    constructor() {
+        super();
+        console.log('NewCase Run Constructor');
+    }
+
+    connectedCallback() {
+        console.log('NewCase Connected Callback');
+    }
+
+    renderedCallback() {
+        console.log('NewCase Rendered Callback');
+    }
+
 }

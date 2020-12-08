@@ -1,6 +1,8 @@
 <template>
   <lightning-input name="zipcode" label="CEP"
-        pattern="(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)"
+        value={zipCode}
+        onblur={handleBlur}
+        pattern="([0-9]{5}-[0-9]{3})"
         max-length="9"
         message-when-bad-input="Digite um Cep válido"
   ></lightning-input>

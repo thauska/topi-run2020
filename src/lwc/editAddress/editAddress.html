@@ -1,10 +1,15 @@
 <template>
   <div class="slds-grid slds-wrap slds-p-around_small">
     <div class="slds-col slds-size_2-of-3">
-      <c-search-zip-code></c-search-zip-code>
+      <c-search-zip-code
+            zip-code={address.zipCode}
+            onsearchedaddress={handleSearchedAddress}
+      >
+      </c-search-zip-code>
     </div>
     <div class="slds-grid slds-size_3-of-3">
       <lightning-input name="address" label="Endereço"
+            value={address.street}
             type="text"
             max-length="255"
             required
@@ -12,19 +17,22 @@
     </div>
     <div class="slds-grid slds-size_1-of-3 slds-p-right_xx-small">
       <lightning-input name="streetNumber" label="Número"
+            value={address.streetNumber}
             type="text"
             max-length="20"
             required
       ></lightning-input>
     </div>
     <div class="slds-grid slds-size_2-of-3">
-      <lightning-input name="addressAdditionalInfo" label="Informação Adicional"
+      <lightning-input name="additionalInfo" label="Informação Adicional"
+            value={address.additionalInfo}
             type="text"
             max-length="255"
       ></lightning-input>
     </div>
     <div class="slds-grid slds-size_2-of-3 slds-p-right_xx-small">
       <lightning-input name="city" label="Cidade"
+            value={address.city}
             type="text"
             max-length="255"
             required
@@ -32,6 +40,7 @@
     </div>
     <div class="slds-grid slds-size_1-of-3">
       <lightning-input name="state" label="Estado"
+            value={address.state}
             type="text"
             max-length="255"
             required
