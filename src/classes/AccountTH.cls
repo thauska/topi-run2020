@@ -1,11 +1,11 @@
 /**
- * @author thauska
- */
+* @author thauska || thayanacmamore
+*/
 
 public virtual with sharing class AccountTH extends TriggerHandler {
-  
+
   List<Account> newAccounts;
-    
+
   Map<Id,Account> oldAccounts;
 
   AccountFilter filter;
@@ -57,5 +57,6 @@ public virtual with sharing class AccountTH extends TriggerHandler {
 
     this.accountEventEnricher.createNewEventForPremiumAccount(premiumAccounts);
   }
+
 
 }

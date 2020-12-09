@@ -36,7 +36,7 @@ public virtual class AccountRepository {
     update accounts;
     return accounts;
   }
-  
+
   virtual
   public void remove (List<Account> accounts) {
     delete accounts;

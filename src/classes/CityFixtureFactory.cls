@@ -1,3 +1,7 @@
+/**
+* @author thauska || thayanacmamore
+*/
+
 @isTest
 public class CityFixtureFactory {
 
@@ -11,11 +15,11 @@ public class CityFixtureFactory {
 
   }
 
-  
+
   public static City__c createCity (String ibge, String city) {
-    
+
     return createCity( newCity(ibge, city) );
-    
+
   }
 
   public static City__c createCity() {

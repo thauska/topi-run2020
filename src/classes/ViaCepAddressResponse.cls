@@ -1,3 +1,7 @@
+/**
+* @author thauska || thayanacmamore
+*/
+
 public class ViaCepAddressResponse {
 
     public String cep;

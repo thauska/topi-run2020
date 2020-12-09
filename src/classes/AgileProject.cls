@@ -1,3 +1,7 @@
+/**
+* @author thauska || thayanacmamore
+*/
+
 global class AgileProject {
 
   public String externalId;

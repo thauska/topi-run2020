@@ -1,3 +1,7 @@
+/**
+* @author thauska || thayanacmamore
+*/
+
 public class SpecialCustomer extends Customer implements Notificable {
   public SpecialCustomer () {
     this.amount = 0;
@@ -10,6 +14,6 @@ public class SpecialCustomer extends Customer implements Notificable {
   }
 
   public void notify() {
-    
+
   }
 }

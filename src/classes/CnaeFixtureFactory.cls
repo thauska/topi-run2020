@@ -1,3 +1,7 @@
+/**
+* @author thauska || thayanacmamore
+*/
+
 @isTest
 public class CnaeFixtureFactory {
 

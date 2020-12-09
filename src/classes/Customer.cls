@@ -1,10 +1,7 @@
-// Convenção: NomeDaClasse
-
-/*
-<public|private|global> [modificadores] class <NomeDaClasse> {
-  code...
-}
+/**
+* @author thauska || thayanacmamore
 */
+
 public virtual class Customer {
 
   public Decimal amount;
@@ -42,7 +39,7 @@ public virtual class Customer {
     return contacts;
   }
 
-  /* 
+  /*
     [modificadores] <Tipo de Retorno> nomeDoMetodo
     [public | protected | private | default]
   */

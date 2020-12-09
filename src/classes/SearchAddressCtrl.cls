@@ -1,6 +1,6 @@
 /**
- * @author: thauska
- */
+* @author thauska || thayanacmamore
+*/
 
 public class SearchAddressCtrl {
 

@@ -1,6 +1,7 @@
 /**
- * @author thauska
- */
+* @author thauska || thayanacmamore
+*/
+
 @isTest
 public class AccountRepositoryTest {
   // BDD - Given When Then (Dado Quando Então)

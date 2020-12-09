@@ -1,3 +1,7 @@
+/**
+* @author thauska || thayanacmamore
+*/
+
 public class ZipCodeAddress {
 
     @AuraEnabled
@@ -8,7 +12,7 @@ public class ZipCodeAddress {
 
     @AuraEnabled
     public String state;
-    
+
     @AuraEnabled
     public String streetNumber;
 

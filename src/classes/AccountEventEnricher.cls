@@ -1,6 +1,6 @@
 /**
- * @author thauska
- */
+* @author thauska || thayanacmamore
+*/
 
 public virtual class AccountEventEnricher {
   EventRepository eventRepository;
