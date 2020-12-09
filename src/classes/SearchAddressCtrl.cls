@@ -9,7 +9,15 @@ public class SearchAddressCtrl {
 
     GetAddressOutboundService service = new GetAddressOutboundService();
 
-    return service.findAddress(zipCode);
+    ZipCodeAddress address;
+
+    try {
+      address = service.findAddress(zipCode);
+    } catch (Exception e ) {
+      throw new AuraException (e.getMessage());
+    }
+
+    return address;
 
   }
 

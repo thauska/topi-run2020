@@ -23,18 +23,27 @@ export default class SearchZipCode extends LightningElement {
 
         if (!event.target.value || event.target.value == this.zipCode) return;
 
-        searchAddress({ zipCode: event.target.value.replace('-', '') }).then(response => {
+        let _zipCode = Object.assign(event.target.value.replace('-', ''));
+
+        searchAddress({ zipCode: _zipCode }).then(response => {
 
             let address = response;
             this.publishAddressChanged(address);
 
+        }).catch(response => {
+
+            let component = this.template.querySelector("[data-name='zipcode']");
+            component.setCustomValidity(response.body.message);
+            component.reportValidity();
+
         });
+
         console.log('Final do blur');
 
 
     }
 
-    publishAddressChanged() {
+    publishAddressChanged(address) {
 
         let searchedAddressEvent = new CustomEvent('searchedaddress', {
             detail: address

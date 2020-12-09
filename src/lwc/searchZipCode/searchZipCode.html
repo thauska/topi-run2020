@@ -1,6 +1,7 @@
 <template>
   <lightning-input name="zipcode" label="CEP"
         value={zipCode}
+        data-name="zipcode"
         onblur={handleBlur}
         pattern="([0-9]{5}-[0-9]{3})"
         max-length="9"
