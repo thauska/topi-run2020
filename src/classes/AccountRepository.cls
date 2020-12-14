@@ -7,9 +7,7 @@ public virtual class AccountRepository {
   virtual
   public List<Account> findByName (String name) {
 
-    return [ SELECT Id, Name, Type, BillingCity, BillingState, BillingPostalCode,
-             BillingCountry, CreatedDate
-             FROM Account
+    return [ SELECT Id, Name, Type, BillingCity, BillingState, BillingPostalCode, BillingCountry, CreatedDate FROM Account
              WHERE Name like :name ];
 
   }

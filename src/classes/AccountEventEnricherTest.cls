@@ -2,6 +2,11 @@
 * @author thauska || thayanacmamore
 */
 
-public with sharing class AccountEventEnricherTest {
+@isTest
+public class AccountEventEnricherTest {
+
+  @isTest
+  public static void WhenCreatedNewEventForPremiumAccount() {
+  }
 
 }

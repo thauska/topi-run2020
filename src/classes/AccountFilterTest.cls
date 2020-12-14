@@ -10,7 +10,7 @@ public class AccountFilterTest {
   static void filterAccountsByDocumentNumberTest () {
 
     List<Account> accounts = new List<Account> {
-      AccountFixtureFactory.newAccount('Teste 03', '86473518002')
+      AccountFixtureFactory.newAccount('Teste 03', '92708838253', 'Premium')
     };
 
     AccountFilter filter = new AccountFilter();
@@ -37,7 +37,6 @@ public class AccountFilterTest {
 
     accounts = new List<Account>();
     accounts.add (new Account (Name = 'Teste 01'));
-    accounts.add (new Account (Name = 'Teste 02'));
 
     filteredAccounts = filter.filterByChangedDocumentNumber(accounts, null);
 
@@ -51,7 +50,7 @@ public class AccountFilterTest {
     List<Account> accounts = new List<Account>();
 
     accounts.add ( AccountFixtureFactory.createAccountByCategoryAndAnnualRevenue('teste', 'Premium', 1001000));
-    accounts.add (AccountFixtureFactory.createAccountByCategoryAndAnnualRevenue('teste', 'Premium', 600000 ));
+    accounts.add (AccountFixtureFactory.createAccountByCategoryAndAnnualRevenue('teste', 'Standard', 600000 ));
 
     AccountFilter filter = new AccountFilter();
 
@@ -66,10 +65,10 @@ public class AccountFilterTest {
 
     filteredAccounts =  filter.filterByCategoryAndAnnualRevenue(accounts, 'Premium', 150000);
     System.assertNotEquals(accounts.size(), filteredAccounts.size() );
-    System.assert(filteredAccounts.size() == 0);
 
     filteredAccounts =  filter.filterByCategoryAndAnnualRevenue(accounts, 'Premium', 1500000);
-    System.assertEquals(accounts.size(), filteredAccounts.size() );
+    System.assertNotEquals(accounts.size(), filteredAccounts.size() );
+    System.assert(filteredAccounts.size() == 0);
 
   }
 
